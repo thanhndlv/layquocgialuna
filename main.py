@@ -10,7 +10,7 @@ TELEGRAM_TOKEN = "7815560131:AAEeaHW-GM-6XJM_JFSobUA-wTOiY6w-mgU"  # Thay bằng
 # Hàm gọi API để lấy dữ liệu IP
 def get_ip_by_country(countries):
     regions = ",".join(countries)
-    api_url = f"https://tq.lunaproxy.com/getflowip?neek=1501384&num=1&regions={regions}&ip_si=1&level=1&sb="
+    api_url = f"https://tq.lunaproxy.com/getflowip?neek=1501384&num=3&regions={regions}&ip_si=1&level=1&sb="
     response = requests.get(api_url)
     if response.status_code == 200:
         return response.text
